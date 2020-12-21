@@ -1,0 +1,13 @@
+# 浏览器兼容配置文件
+# 指定了项目的目标浏览器的范围。
+# 这个值会被 @babel/preset-env 和 Autoprefixer
+# 用来确定需要转译的 JavaScript 特性和需要添加的 CSS 浏览器前缀
+# 目前兼容 IE11 和Chrome 60以上的浏览器版本
+IE 11
+chrome >= 60
+
+
+# > 1%
+# last 2 versions
+# not dead
+# IE 11

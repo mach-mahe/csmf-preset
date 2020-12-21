@@ -1,0 +1,8 @@
+{
+  "useConfigFiles": true,
+  "plugins": {
+
+  },
+  "vueVersion": "2",
+  "cssPreprocessor": "less"
+}

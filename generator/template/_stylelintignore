@@ -1,0 +1,11 @@
+/dist/
+/test/
+/csmf-master/
+*.min.css
+*.js
+*.ts
+*.png
+*.jpg
+*.webp
+*.ttf
+*.woff
