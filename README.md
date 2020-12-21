@@ -27,7 +27,7 @@
 
 1. 从 GitHub repo 使用 preset
 
-    > vue create --preset username/csmf-preset xxx项目名
+    > vue create --preset mach-mahe/csmf-preset xxx项目名
 
 2. 本地环境搭建，将create-preset项目拉取到本地
     > vue create --preset ./csmf-preset(创建项目路径目录的相对路径)  xxx项目名
