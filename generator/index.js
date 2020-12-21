@@ -37,11 +37,11 @@ module.exports = (api, options, rootOptions) => {
     api.extendPackage({
 
         scripts: {
-            "serve":"eslint 'src/**/*.vue' --fix && prettier --write 'src/**/*.js' 'src/**/*.vue' && stylelint '**/*.{vue,css,less}'  --fix && vue-cli-service serve",
-            "build":"eslint 'src/**/*.vue' --fix && prettier --write 'src/**/*.js' 'src/**/*.vue' && stylelint '**/*.{vue,css,less}'  --fix && vue-cli-service build",
-            "stylelint:fix": "stylelint '**/*.{vue,css,less}'  --fix",
-            "prettier:format": "prettier --write 'src/**/*.js' 'src/**/*.vue'",
-            "eslint:fix": "eslint 'src/**/*.vue' --fix"
+            "serve": "npm run eslint:fix && npm run prettier:format && npm run stylelint:fix && vue-cli-service serve",
+            "build": "npm run eslint:fix && npm run prettier:format && npm run stylelint:fix && vue-cli-service build",
+            "eslint:fix": "eslint src/**/*.vue --fix",
+            "prettier:format": "prettier --write src/**/*.js src/**/*.vue",
+            "stylelint:fix": "stylelint **/*.{vue,css,less}  --fix"
         }
     })
 
