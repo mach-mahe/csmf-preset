@@ -33,8 +33,9 @@ module.exports = (api, options, rootOptions) => {
             "vue-cli-plugin-auto-routing": "~0.4.1",
         }
     });
-
+    // 默认的serve和build命令，执行之前，校验并修复文件
     api.extendPackage({
+
         scripts: {
             "serve":"eslint 'src/**/*.vue' --fix && prettier --write 'src/**/*.js' 'src/**/*.vue' && stylelint '**/*.{vue,css,less}'  --fix && vue-cli-service serve",
             "build":"eslint 'src/**/*.vue' --fix && prettier --write 'src/**/*.js' 'src/**/*.vue' && stylelint '**/*.{vue,css,less}'  --fix && vue-cli-service build",
