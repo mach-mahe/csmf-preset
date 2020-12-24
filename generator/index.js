@@ -14,11 +14,13 @@ module.exports = (api, options, rootOptions) => {
             "@vue/cli-service": "~4.5.0",
             "@vue/eslint-config-prettier": "^6.0.0",
             "babel-eslint": "^10.1.0",
+            "babel-plugin-lodash": "^3.3.4",
             "eslint": "^6.7.2",
             "eslint-plugin-prettier": "^3.1.3",
             "eslint-plugin-vue": "^6.2.2",
             "less": "^3.0.4",
             "less-loader": "^5.0.0",
+            "lodash-webpack-plugin": "^0.11.6",
             "prettier": "^1.19.1",
             "style-resources-loader": "^1.3.2",
             "stylelint": "^8.4.0",
@@ -39,9 +41,9 @@ module.exports = (api, options, rootOptions) => {
         scripts: {
             "serve": "npm run eslint:fix && npm run prettier:format && npm run stylelint:fix && vue-cli-service serve",
             "build": "npm run eslint:fix && npm run prettier:format && npm run stylelint:fix && vue-cli-service build",
-            "eslint:fix": "eslint src/**/*.vue --fix",
-            "prettier:format": "prettier --write src/**/*.js src/**/*.vue",
-            "stylelint:fix": "stylelint **/*.{vue,css,less}  --fix"
+            "eslint:fix": "eslint \"src/**/*.{vue,js}\" --fix",
+            "prettier:format": "prettier --write \"src/**/*.{vue,js}\"",
+            "stylelint:fix": "stylelint \"src/**/*.{vue,css,less}\" --fix"
         }
     })
 
