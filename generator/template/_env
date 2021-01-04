@@ -1,1 +1,6 @@
+# 当前系统使用的view的版本信息
 VUE_APP_VIEW_VERSION=v1
+# 系统的默认title，在index.html中使用
+VUE_APP_TITLE=loading
+# 后台的i18n的接口地址，如果没有，可以不配置
+VUE_APP_I18N_API=/loadI18nInfo
