@@ -3,7 +3,7 @@ module.exports = (api, options, rootOptions) => {
     api.extendPackage({
         dependencies: {
 
-            "csmf-cli-helper": "^0.0.5"
+            "csmf-cli-helper": "^1.0.1"
         },
         devDependencies: {
             "@mapbox/stylelint-processor-arbitrary-tags": "^0.2.0",
