@@ -1,3 +1,4 @@
 NODE_ENV=development
 BASE_URL=/
-VUE_APP_BASE_API_URL=127.0.0.1:8080
+VUE_APP_BASE_API_URL=https://www.fastmock.site/mock/da67ff5eb00d6bae8a130417b133996d/csmf
+VUE_APP_SSO_TEST_URL=http://10.21.178.144:8081/sso-web-sample-1

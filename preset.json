@@ -3,6 +3,5 @@
   "plugins": {
 
   },
-  "vueVersion": "2",
-  "cssPreprocessor": "less"
+  "vueVersion": "2"
 }

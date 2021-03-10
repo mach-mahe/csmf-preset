@@ -3,4 +3,10 @@ VUE_APP_VIEW_VERSION=v1
 # 系统的默认title，在index.html中使用
 VUE_APP_TITLE=loading
 # 后台的i18n的接口地址，如果没有，可以不配置
-VUE_APP_I18N_API=/loadI18nInfo
+VUE_APP_I18N_API=/sys/loadI18nInfo
+## 是否启用sso单点登录
+VUE_APP_SSO_ENABLEED=false
+# SSO单点登录地址
+VUE_APP_SSO_LOGIN_URL=http://10.21.178.144:8080/sso_web/login
+## 系统编码
+VUE_APP_SSO_SYSTEM_CODE=web_1
